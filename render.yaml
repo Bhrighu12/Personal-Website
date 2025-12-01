@@ -12,9 +12,8 @@ services:
       - key: EMAIL_PASS
         sync: false
 
-  # Frontend Service
-  - type: static_site
-    name: portfolio-frontend
+staticSites:
+  - name: portfolio-frontend
     env: static
     root: client
     buildCommand: npm install && npm run build
