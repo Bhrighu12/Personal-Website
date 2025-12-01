@@ -13,7 +13,7 @@ services:
         sync: false
 
   # Frontend Service
-  - type: static
+  - type: static_site
     name: portfolio-frontend
     env: static
     root: client
