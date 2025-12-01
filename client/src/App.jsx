@@ -143,7 +143,7 @@ function App() {
             LinkedIn
           </a>
         </div>
-        <p style={{ color: '#64748b', fontSize: '0.9rem' }}>&copy; 2023 Bhragu Gupta. All rights reserved.</p>
+        <p style={{ color: '#64748b', fontSize: '0.9rem' }}>&copy; 2025 Bhrigu Gupta. All rights reserved.</p>
       </footer>
     </div>
   );
