@@ -15,31 +15,51 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!formData.name || !formData.email || !formData.message) {
+      setStatus('Please fill in all fields.');
+      return;
+    }
+
     setStatus('Sending...');
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/contact`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+      const data = new FormData();
+
+      // 🔑 Your Web3Forms access key
+      data.append(
+        "access_key",
+        import.meta.env.VITE_WEB3FORMS_KEY || "YOUR_WEB3FORMS_KEY_HERE"
+      );
+
+      // form fields
+      data.append("name", formData.name);
+      data.append("email", formData.email);
+      data.append("message", formData.message);
+
+      // optional extras (show up in email)
+      data.append("subject", `Portfolio contact from ${formData.name}`);
+      data.append("from_name", "Portfolio Website");
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: data,
       });
 
-      const data = await response.json();
+      const json = await res.json();
 
-      if (response.ok) {
-        setStatus('Message sent successfully!');
-        setFormData({ name: '', email: '', message: '' });
+      if (json.success) {
+        setStatus("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
       } else {
-        setStatus(data.error || 'Failed to send message.');
+        console.error(json);
+        setStatus(json.message || "Failed to send message.");
       }
     } catch (error) {
-      console.error('Error:', error);
-      setStatus('Failed to send message. Please try again later.');
+      console.error("Error:", error);
+      setStatus("Failed to send message. Please try again later.");
     }
   };
-
   return (
     <section className="section contact" id="contact">
       <div className="container">
