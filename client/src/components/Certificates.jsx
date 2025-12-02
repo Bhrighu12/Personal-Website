@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 const Certificates = () => {
     const certificates = [
         { name: 'Java Programming', issuer: 'IBM Coursera', date: '2025' },
-        { name: 'Introduction toAIML', issuer: 'NPTEL', date: '2024' },
-        { name: 'React Development', issuer: 'Udemy', date: '2024' },
+        { name: 'Introduction to AIML', issuer: 'NPTEL', date: '2024' },
+        { name: 'Introduction to Software Engineering', issuer: 'IBM Coursera', date: '2025' },
         { name: 'Node.js Bootcamp', issuer: 'Coursera', date: '2024' },
         { name: 'Full Stack Web Dev', issuer: 'FreeCodeCamp', date: '2022' },
         { name: 'Python for Data Science', issuer: 'EdX', date: '2023' },
