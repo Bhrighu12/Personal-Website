@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const Certificates = () => {
     const certificates = [
-        { name: 'Java Programming', issuer: 'IBM Coursera', date: '2023' },
-        { name: 'AIML', issuer: 'NPTEL', date: '2023' },
+        { name: 'Java Programming', issuer: 'IBM Coursera', date: '2025' },
+        { name: 'Introduction toAIML', issuer: 'NPTEL', date: '2024' },
         { name: 'React Development', issuer: 'Udemy', date: '2024' },
         { name: 'Node.js Bootcamp', issuer: 'Coursera', date: '2024' },
         { name: 'Full Stack Web Dev', issuer: 'FreeCodeCamp', date: '2022' },
