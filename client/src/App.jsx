@@ -3,6 +3,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Certificates from './components/Certificates';
+
+import Experience from './components/Experience';
 import Contact from './components/Contact';
 
 function App() {
@@ -63,7 +65,7 @@ function App() {
           Bhrigu Gupta<span style={{ color: 'var(--primary-color)' }}>.</span>
         </div>
         <div style={{ display: 'flex', gap: '2.5rem', alignItems: 'center' }}>
-          {['About', 'Projects', 'Certificates', 'Contact'].map((item) => (
+          {['About', 'Experience', 'Projects', 'Certificates', 'Contact'].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -109,6 +111,7 @@ function App() {
 
       <Hero />
       <About />
+      <Experience />
       <Projects />
       <Certificates />
       <Contact />
