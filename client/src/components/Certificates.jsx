@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 const Certificates = () => {
     const certificates = [
-        { name: 'Java Programming', issuer: 'IBM Coursera', date: '2025', pdf: '/certificates/placeholder.pdf' },
-        { name: 'Introduction to AIML', issuer: 'NPTEL', date: '2024', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Java Programming for Beginners', issuer: 'IBM Coursera', date: '2025', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Introduction to Machine Learning', issuer: 'NPTEL', date: '2024', pdf: '/certificates/placeholder.pdf' },
         { name: 'Introduction to Software Engineering', issuer: 'IBM Coursera', date: '2025', pdf: '/certificates/placeholder.pdf' },
-        { name: 'Node.js Bootcamp', issuer: 'Coursera', date: '2024', pdf: '/certificates/placeholder.pdf' },
-        { name: 'Full Stack Web Dev', issuer: 'FreeCodeCamp', date: '2022', pdf: '/certificates/placeholder.pdf' },
-        { name: 'Python for Data Science', issuer: 'EdX', date: '2023', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Java App Development Project', issuer: 'SkillUp Online', date: '2025', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Object Oriented Programming in Java', issuer: 'IBM Coursera', date: '2025', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Avionics and Aircraft Systems', issuer: 'Coursera', date: '2025', pdf: '/certificates/placeholder.pdf' },
         { name: 'AWS Cloud Practitioner', issuer: 'AWS', date: '2024', pdf: '/certificates/placeholder.pdf' },
         { name: 'Docker & Kubernetes', issuer: 'Udemy', date: '2024', pdf: '/certificates/placeholder.pdf' },
         { name: 'Agile Methodologies', issuer: 'LinkedIn Learning', date: '2023', pdf: '/certificates/placeholder.pdf' },
