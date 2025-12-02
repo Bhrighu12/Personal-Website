@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 
 const Certificates = () => {
     const certificates = [
-        { name: 'Java Programming', issuer: 'IBM Coursera', date: '2025' },
-        { name: 'Introduction to AIML', issuer: 'NPTEL', date: '2024' },
-        { name: 'Introduction to Software Engineering', issuer: 'IBM Coursera', date: '2025' },
-        { name: 'Node.js Bootcamp', issuer: 'Coursera', date: '2024' },
-        { name: 'Full Stack Web Dev', issuer: 'FreeCodeCamp', date: '2022' },
-        { name: 'Python for Data Science', issuer: 'EdX', date: '2023' },
-        { name: 'AWS Cloud Practitioner', issuer: 'AWS', date: '2024' },
-        { name: 'Docker & Kubernetes', issuer: 'Udemy', date: '2024' },
-        { name: 'Agile Methodologies', issuer: 'LinkedIn Learning', date: '2023' },
-        { name: 'Cyber Security Basics', issuer: 'Google', date: '2022' }
+        { name: 'Java Programming', issuer: 'IBM Coursera', date: '2025', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Introduction to AIML', issuer: 'NPTEL', date: '2024', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Introduction to Software Engineering', issuer: 'IBM Coursera', date: '2025', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Node.js Bootcamp', issuer: 'Coursera', date: '2024', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Full Stack Web Dev', issuer: 'FreeCodeCamp', date: '2022', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Python for Data Science', issuer: 'EdX', date: '2023', pdf: '/certificates/placeholder.pdf' },
+        { name: 'AWS Cloud Practitioner', issuer: 'AWS', date: '2024', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Docker & Kubernetes', issuer: 'Udemy', date: '2024', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Agile Methodologies', issuer: 'LinkedIn Learning', date: '2023', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Cyber Security Basics', issuer: 'Google', date: '2022', pdf: '/certificates/placeholder.pdf' }
     ];
 
     const achievements = [
@@ -55,7 +55,37 @@ const Certificates = () => {
                         transition={{ delay: index * 0.1, duration: 0.4 }}
                         whileHover={{ scale: 1.02, backgroundColor: 'rgba(255,255,255,0.08)' }}
                     >
-                        <h4 style={{ fontSize: '1.1rem', marginBottom: '0.3rem', color: '#fff' }}>{item.name}</h4>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.3rem' }}>
+                            <h4 style={{ fontSize: '1.1rem', margin: 0, color: '#fff' }}>{item.name}</h4>
+                            {item.pdf && (
+                                <a
+                                    href={item.pdf}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                        fontSize: '0.8rem',
+                                        color: 'var(--accent-color)',
+                                        textDecoration: 'none',
+                                        border: '1px solid var(--accent-color)',
+                                        padding: '2px 8px',
+                                        borderRadius: '4px',
+                                        marginLeft: '10px',
+                                        whiteSpace: 'nowrap',
+                                        transition: 'all 0.3s ease'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.target.style.backgroundColor = 'var(--accent-color)';
+                                        e.target.style.color = '#fff';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.target.style.backgroundColor = 'transparent';
+                                        e.target.style.color = 'var(--accent-color)';
+                                    }}
+                                >
+                                    View
+                                </a>
+                            )}
+                        </div>
                         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', color: '#94a3b8' }}>
                             <span>{item.issuer || item.event}</span>
                             <span>{item.date}</span>
