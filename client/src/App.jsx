@@ -124,7 +124,7 @@ function App() {
         background: 'rgba(5,5,5,0.5)',
         backdropFilter: 'blur(10px)'
       }}>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginBottom: '1.5rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
           <a
             href="https://github.com/Bhrighu12"
             target="_blank"
