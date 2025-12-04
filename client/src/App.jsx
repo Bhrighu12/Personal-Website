@@ -145,6 +145,46 @@ function App() {
           >
             LinkedIn
           </a>
+          <a
+            href="https://linkedin.com/in/bhrigugupta"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#94a3b8', transition: 'color 0.3s' }}
+            onMouseOver={(e) => e.target.style.color = '#fff'}
+            onMouseOut={(e) => e.target.style.color = '#94a3b8'}
+          >
+            Leetcode
+          </a>
+          <a
+            href="https://linkedin.com/in/bhrigugupta"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#94a3b8', transition: 'color 0.3s' }}
+            onMouseOver={(e) => e.target.style.color = '#fff'}
+            onMouseOut={(e) => e.target.style.color = '#94a3b8'}
+          >
+            Instagram
+          </a>
+          <a
+            href="https://linkedin.com/in/bhrigugupta"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#94a3b8', transition: 'color 0.3s' }}
+            onMouseOver={(e) => e.target.style.color = '#fff'}
+            onMouseOut={(e) => e.target.style.color = '#94a3b8'}
+          >
+            Twitter
+          </a>
+          <a
+            href="https://linkedin.com/in/bhrigugupta"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#94a3b8', transition: 'color 0.3s' }}
+            onMouseOver={(e) => e.target.style.color = '#fff'}
+            onMouseOut={(e) => e.target.style.color = '#94a3b8'}
+          >
+            Whatsapp
+          </a>
         </div>
         <p style={{ color: '#64748b', fontSize: '0.9rem' }}>&copy; 2025 Bhrigu Gupta. All rights reserved.</p>
       </footer>
