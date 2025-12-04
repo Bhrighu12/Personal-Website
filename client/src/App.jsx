@@ -146,7 +146,7 @@ function App() {
             LinkedIn
           </a>
           <a
-            href="https://linkedin.com/in/bhrigugupta"
+            href="https://leetcode.com/u/bhrigu12/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: '#94a3b8', transition: 'color 0.3s' }}
@@ -156,7 +156,7 @@ function App() {
             Leetcode
           </a>
           <a
-            href="https://linkedin.com/in/bhrigugupta"
+            href="https://www.instagram.com/bhrighugupta/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: '#94a3b8', transition: 'color 0.3s' }}
@@ -166,7 +166,7 @@ function App() {
             Instagram
           </a>
           <a
-            href="https://linkedin.com/in/bhrigugupta"
+            href="https://x.com/BhrighuGupta"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: '#94a3b8', transition: 'color 0.3s' }}
@@ -176,7 +176,7 @@ function App() {
             Twitter
           </a>
           <a
-            href="https://linkedin.com/in/bhrigugupta"
+            href="https://wa.me/7006901099"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: '#94a3b8', transition: 'color 0.3s' }}
