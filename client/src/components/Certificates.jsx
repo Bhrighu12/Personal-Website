@@ -11,7 +11,7 @@ const Certificates = () => {
         { name: 'Avionics and Aircraft Systems', issuer: 'Coursera', date: '2025', pdf: '/certificates/Avionics.pdf' },
         { name: 'Getting Started with Git and GitHub', issuer: 'IBM', date: '2025', pdf: '/certificates/Github.pdf' },
         { name: 'Introduction to HTML, CSS, & JavaScript', issuer: 'IBM', date: '2025', pdf: '/certificates/HTML.pdf' },
-        { name: 'Agile Methodologies', issuer: 'LinkedIn Learning', date: '2023', pdf: '/certificates/placeholder.pdf' },
+        { name: 'Agile', issuer: 'LinkedIn Learning', date: '2023', pdf: '/certificates/placeholder.pdf' },
         { name: 'Cyber Security Basics', issuer: 'Google', date: '2022', pdf: '/certificates/placeholder.pdf' }
     ];
 
