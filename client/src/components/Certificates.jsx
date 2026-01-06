@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 const Certificates = () => {
     const certificates = [
+        { name: 'Spring Framework for Java Development', issuer: 'SkillUp Online', date: '2026', pdf: '/certificates/SpringBoot.pdf' },
         { name: 'Java Programming for Beginners', issuer: 'IBM', date: '2025', pdf: '/certificates/JavaPFB.pdf' },
         { name: 'Introduction to Machine Learning', issuer: 'NPTEL', date: '2024', pdf: '/certificates/NPTEL(AIML).pdf' },
         { name: 'Introduction to Software Engineering', issuer: 'IBM', date: '2025', pdf: '/certificates/ITSE.pdf' },
